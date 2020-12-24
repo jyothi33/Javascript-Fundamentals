@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JS Example</title>
+</head>
+<body>
+    <h1>Javascript Basics</h1> 
+    <hr>
+    <p>Inline Javascript</p>
+    <button onclick="alert('Inline Javascript!')">Click Me!</button>
+    <button onclick="alert('Inline Javascript!')">Click Me!</button>
+    <button onclick="alert('Inline Javascript!')">Click Me!</button>
+    <button onclick="alert('Inline Javascript!')">Click Me!</button>
+    <hr>
+    <p>Internal Javascript</p>
+    <button class="btn">random text</button>
+    <button class="btn">random text</button>
+    <button class="btn">random text</button>
+    <button class="btn">random text</button>
+    <button class="btn">random text</button>
+    <button class="btn">random text</button>
+    <button class="btn">random text</button>
+    <script>
+        document.querySelectorAll('.btn').forEach(
+            (item) => {
+                item.addEventListener('click', () => {alert('Internal Javascript!!')})
+            }
+        );
+    </script>
+    <hr>
+    <p>External Javascript</p>
+    <a href="TestExternalJavascript.html">Page 1</a>
+    <button class="btn1">Click Me!!!</button>
+    <button class="btn1">Click Me!!!</button>
+    <button class="btn1">Click Me!!!</button>
+    <button class="btn1">Click Me!!!</button>
+    <button class="btn1">Click Me!!!</button>
+    <button class="btn1">Click Me!!!</button>
+    <hr>
+    <ul>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Starwberry</li>
+        <li>Grapes</li>
+    </ul>
+    <script src="./externaljs.js"></script>
+</body>
+</html>
